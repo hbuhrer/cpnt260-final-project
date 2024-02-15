@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palm Tequila - Contact Us</title>
+    <link rel="stylesheet" href="../CSS/nav-and-footer.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+  </head>
+  <body>
+    <nav class="nav-menus">
+      <div class="mobile-logo">
+        <img src="../ASSETS/logo.svg" alt="logo" class="logo-mobile" />
+      </div>
+
+      <div class="dropdown">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </label>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="../index.html" class="home">Home</a></li>
+            <li><a href="shop.html" class="shop">Shop</a></li>
+            <li><a href="about.html" class="about">About Us</a></li>
+            <li><a href="contact.html" class="contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="logo-desktop">
+        <img src="../ASSETS/logo.svg" alt="logo" class="logo-desktop" /><a
+          class="desktop-logo"
+          href="../index.html"
+          >Palm Tequila</a
+        >
+      </div>
+
+      <ul class="nav-desktop">
+        <li><a href="../index.html" class="home">Home</a></li>
+        <li><a href="shop.html" class="shop">Shop</a></li>
+        <li><a href="about.html" class="about">About Us</a></li>
+        <li><a href="contact.html" class="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="contact-h1">Contact Us</h1>
+
+      <section>
+        <p>
+          Palm Tequila welcomes your inquiries and feedback! Contact us using
+          the form below to learn more about our premium tequila offerings or to
+          inquire about distribution opportunities. We value your input and
+          strive to provide exceptional customer service. Fill out the form with
+          your name, email, and message, and we'll get back to you as soon as
+          possible.
+        </p>
+
+        <form action="https://formspree.io/f/mvoeaaon" method="POST">
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            E-mail:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2024 Hendrich Buhrer</footer>
+  </body>
+</html>

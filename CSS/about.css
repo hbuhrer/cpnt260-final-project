@@ -1,0 +1,90 @@
+/* Styles the 'about' link in the navigation bar */
+nav .about {
+  color: hsl(260, 36%, 43%);
+}
+
+/* Sets the background image of the body, covers the entire background, positions it in the center, and blends it with the background color */
+body {
+  background-image: url("../ASSETS/about-beach.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-color: hsl(0, 0%, 31%);
+  background-blend-mode: overlay;
+}
+
+/* Centers and aligns the main content vertically and horizontally, and sets the maximum width to 100% */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0;
+  max-width: 100%;
+}
+
+/* Styles the main heading in the 'about' section */
+.about-h1 {
+  margin-bottom: 0.5em;
+  text-align: center;
+  padding: 0.5em;
+  color: hsl(260, 36%, 43%);
+  font-size: 3em;
+  background-color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  min-width: 100%;
+}
+
+/* Styles the wrapper for the video, sets its position, width, padding, and overflow properties */
+.video-wrapper {
+  position: relative;
+  width: calc(
+    100% - 4em
+  ); /* Adjusts the width to be 4em less than the container */
+  margin: 0 auto;
+  padding-top: 56.25%; /* Sets the aspect ratio for a 16:9 video */
+  overflow: hidden;
+  border: solid 10px hsl(260, 36%, 43%); /* Adds a border around the video */
+}
+
+/* Styles the iframe inside the video wrapper */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Removes the border of the iframe */
+}
+
+/* Styles the main content container in the 'about' section */
+.about-main {
+  max-width: 900px; /* Sets the maximum width of the container */
+  padding: 2em;
+  padding-top: 0;
+}
+
+/* Styles the generic sections in the page */
+section {
+  text-align: center;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 0%, 0.278);
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
+/* Media query for screens up to 750px wide */
+@media only screen and (max-width: 750px) {
+  /* Adjusts the padding of the main content container in the 'about' section */
+  .about-main {
+    padding: 1em;
+  }
+  /* Adjusts the font size of the sections */
+  section {
+    font-size: 1.2em;
+  }
+}

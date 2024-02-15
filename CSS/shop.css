@@ -1,0 +1,99 @@
+/* Media query for screens with a minimum width of 751px */
+@media (min-width: 751px) {
+  /* Styles the grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+    padding: 1.25em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Media query for screens up to 750px wide */
+@media (max-width: 750px) {
+  /* Styles the grid layout for smaller screens */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+
+  /* Adjusts the font size of the heading 1 within the shop section */
+  .shop-h1 {
+    font-size: 16px;
+  }
+}
+
+/* Styles the padding of the grid */
+.grid {
+  padding-top: 0;
+}
+
+/* Styles the links within the articles */
+.article-link {
+  text-decoration: none;
+}
+
+/* Styles for the card */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 0.5em;
+  border: 2px solid white;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  text-decoration: none;
+}
+
+/* Styles the images within the card */
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Styles the content within the card */
+.card-content {
+  padding: 0.625em;
+}
+
+/* Styles the heading 2 */
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.3125em;
+  font-size: 1.4em;
+  color: hsl(260, 36%, 43%);
+}
+
+/* Styles the paragraphs */
+p {
+  margin: 0;
+  font-size: 1.2em;
+  color: hsl(186, 38%, 52%);
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: scale(1.05);
+  border: 2px solid hsl(260, 36%, 43%);
+  transition: transform 200ms ease-in;
+}
+
+/* Styles the 'shop' link in the navigation bar */
+nav .shop {
+  color: hsl(260, 36%, 43%);
+}
+
+/* Styles the heading 1 within the shop section */
+.shop-h1 {
+  text-align: center;
+  padding: 0.5em;
+  color: hsl(260, 36%, 43%);
+  font-size: 3em;
+  background-color: yellow;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
