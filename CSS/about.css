@@ -5,14 +5,12 @@ nav .about {
 
 /* Sets the background image of the body, covers the entire background, positions it in the center, and blends it with the background color */
 body {
-  background-image: url("../ASSETS/about-beach.jpg");
+  background-image: url("../ASSETS/about-farmer.jpeg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-color: hsl(0, 0%, 31%);
-  background-blend-mode: overlay;
 }
 
 /* Centers and aligns the main content vertically and horizontally, and sets the maximum width to 100% */
@@ -43,12 +41,13 @@ main {
 .video-wrapper {
   position: relative;
   width: calc(
-    100% - 4em
+    100% - 3em
   ); /* Adjusts the width to be 4em less than the container */
   margin: 0 auto;
   padding-top: 56.25%; /* Sets the aspect ratio for a 16:9 video */
   overflow: hidden;
   border: solid 10px hsl(260, 36%, 43%); /* Adds a border around the video */
+  border-radius: 0.3em;
 }
 
 /* Styles the iframe inside the video wrapper */
@@ -72,10 +71,12 @@ main {
 section {
   text-align: center;
   font-size: 1.5em;
-  color: hsl(0, 0%, 100%);
-  background-color: hsla(0, 0%, 0%, 0.278);
+  color: hsl(260, 36%, 43%);
+  background-color: hsla(0, 0%, 100%);
   padding: 1em;
   margin-top: 1.5em;
+  border: 1px solid hsl(260, 36%, 43%);
+  border-radius: 0.3em;
 }
 
 /* Media query for screens up to 750px wide */

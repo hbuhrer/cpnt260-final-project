@@ -21,15 +21,32 @@
     margin-bottom: 2em;
   }
 
+  .grid a article{
+    min-height: 0;
+  }
+
   /* Adjusts the font size of the heading 1 within the shop section */
   .shop-h1 {
     font-size: 16px;
   }
 }
 
+body {
+  background-image: url("../ASSETS/shop-beach.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Styles the padding of the grid */
 .grid {
   padding-top: 0;
+}
+
+.grid a article{
+  min-height: 22em;
 }
 
 /* Styles the links within the articles */
@@ -41,7 +58,6 @@
 .card {
   background-color: #f9f9f9;
   border-radius: 0.5em;
-  border: 2px solid white;
   overflow: hidden;
   cursor: pointer;
   transition: transform 200ms ease-in;
@@ -78,7 +94,6 @@ p {
 /* Hover effect for the card */
 .card:hover {
   transform: scale(1.05);
-  border: 2px solid hsl(260, 36%, 43%);
   transition: transform 200ms ease-in;
 }
 

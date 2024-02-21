@@ -1,3 +1,12 @@
+body{
+  background-image: url("../ASSETS/contact-beach.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Centers and aligns the main content vertically and horizontally, and sets the maximum width to 100% */
 main {
   display: flex;
@@ -31,6 +40,11 @@ section {
 
 /* Styles the paragraphs in the 'contact' section */
 p {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 30em;
+  padding: 1em;
+  border-radius: 0.3em;
+  border: 1px solid hsl(186, 38%, 52%);
   margin-bottom: 2.25em;
   text-align: center;
   font-size: 1.25em;
@@ -40,7 +54,6 @@ p {
 /* Styles the form in the 'contact' section */
 form {
   color: hsl(260, 36%, 43%);
-  max-width: 30em;
   margin: 0 auto;
   padding: 1.25em;
   border: 0.06em solid hsl(186, 38%, 52%);
@@ -120,7 +133,7 @@ nav .contact {
 @media only screen and (max-width: 750px) {
   /* Adjusts the padding of the form in the 'contact' section */
   form {
-    padding: 0.6em;
+    padding: 1em;
   }
 
   /* Adjusts the padding of the input fields and text area in the form */
